@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Basics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 5px;
+        }
+        code {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .example {
+            margin-left: 20px;
+            font-style: italic;
+        }
+        .note {
+            background-color: #f9f9f9;
+            border-left: 5px solid #4CAF50;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Java Programming Basics</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Syntax</h2>
+            <p>Syntax tells us how to write a specific statement in Java programming.</p>
+        </section>
+
+        <section>
+            <h2>Statement</h2>
+            <p>A <strong>statement</strong> is a line that performs an action or task. Examples:</p>
+            <ul>
+                <li><code>int x;</code></li>
+                <li><code>System.out.println("Hello");</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Expression</h2>
+            <p>An <strong>expression</strong> is any line of code that produces a result. Examples:</p>
+            <ul>
+                <li><code>5 + 10</code></li>
+                <li><code>A + 10</code></li>
+                <li><code>10 > 5</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Keywords</h2>
+            <p><strong>Keywords</strong> are reserved words that are used to write a program. Examples include:</p>
+            <ul>
+                <li><code>int</code>, <code>char</code>, <code>float</code>, and more.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Input and Output</h2>
+            <h3>Methods for Output</h3>
+            <ul>
+                <li><code>System.out.print()</code> - Prints text.</li>
+                <li><code>System.out.println()</code> - Prints text and moves to the next line.</li>
+                <li><code>System.out.printf()</code> - Prints formatted text.</li>
+            </ul>
+
+            <h3>Methods for Input</h3>
+            <p>To take input in Java, follow these steps:</p>
+            <ol>
+                <li>Import the scanner class: <code>import java.util.Scanner;</code></li>
+                <li>Create a scanner object: <code>Scanner sc = new Scanner(System.in);</code></li>
+                <li>Use scanner methods to take input:
+                    <ul>
+                        <li><code>nextInt()</code> – Reads an integer. Example: <code>int num = sc.nextInt();</code></li>
+                        <li><code>nextLine()</code> – Reads a full line of text. Example: <code>String line = sc.nextLine();</code></li>
+                        <li><code>next()</code> – Reads a single word.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Data Types</h2>
+            <h3>Integers</h3>
+            <ul>
+                <li><strong>Byte</strong>: 
+                    <ul>
+                        <li>Size: 1 byte</li>
+                        <li>Range: -128 to 127</li>
+                    </ul>
+                </li>
+                <li><strong>Short</strong>: 
+                    <ul>
+                        <li>Size: 2 bytes</li>
+                        <li>Range: -32,768 to 32,767</li>
+                    </ul>
+                </li>
+                <li><strong>Int</strong>: 
+                    <ul>
+                        <li>Size: 4 bytes</li>
+                        <li>Range: -2,147,483,648 to 2,147,483,647</li>
+                    </ul>
+                </li>
+                <li><strong>Long</strong>: 
+                    <ul>
+                        <li>Size: 8 bytes</li>
+                        <li>Range: -2^63 to 2^63</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Floating Point</h3>
+            <ul>
+                <li><strong>Float</strong>: 
+                    <ul>
+                        <li>Size: 4 bytes</li>
+                        <li>Range: 1.4E-324 to 1.8E+308</li>
+                    </ul>
+                </li>
+                <li><strong>Double</strong>: 
+                    <ul>
+                        <li>Size: 8 bytes</li>
+                        <li>Range: 4.9E-324 to 1.8E+308</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Other Types</h3>
+            <ul>
+                <li><strong>Char</strong>: 
+                    <ul>
+                        <li>Size: 1 byte</li>
+                        <li>Range: 0 to 65,535</li>
+                    </ul>
+                </li>
+                <li><strong>Boolean</strong>: 
+                    <ul>
+                        <li>Size: 1 byte</li>
+                        <li>Range: true or false</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Operators</h2>
+            <h3>Arithmetic Operators</h3>
+            <ul>
+                <li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></li>
+            </ul>
+
+            <h3>Relational Operators</h3>
+            <ul>
+                <li><code>></code>, <code><</code>, <code>>=</code>, <code><=</code></li>
+            </ul>
+
+            <h3>Comparison Operators</h3>
+            <ul>
+                <li><code>==</code>, <code>!=</code></li>
+            </ul>
+
+            <h3>Logical Operators</h3>
+            <ul>
+                <li><code>&&</code>, <code>||</code>, <code>!</code></li>
+            </ul>
+
+            <h3>Unary Operators</h3>
+            <ul>
+                <li><code>++</code>, <code>--</code>, <code>!</code></li>
+            </ul>
+
+            <h3>Assignment Operators</h3>
+            <ul>
+                <li><code>=</code>, <code>+=</code>, <code>-=</code></li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
